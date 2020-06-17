@@ -37,12 +37,15 @@ a {
   text-decoration: none;
 }
 
-.container {
+.hero-img {
   background: url("./img/apple.jpg") 50% 100% no-repeat;
+  min-height: 700px;
+  max-height: 70vh;
+}
+
+.container {
   max-width: 1440px;
   margin: 0 auto;
-  min-height: 500px;
-  max-height: 70vh;
 }
 
 #logo {
@@ -152,6 +155,7 @@ footer a {
 .main-text {
   text-transform: capitalize;
   display: flex;
+  cursor: pointer;
   margin-top: 15vh;
   flex-direction: column;
   align-items: center;
@@ -197,21 +201,24 @@ footer a {
 
 footer {
   clear: both;
-  width: 75%;
-  margin: 32vh auto 10px auto;
+  width: 100%;
   font-size: 0.9em;
   color: #6e6e6e;
+  padding-bottom: 50px;
 }
 
 .footer-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-links ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.footer-links li {
+  padding: 0 5px;
 }
 
 #us-flag {
@@ -225,9 +232,11 @@ footer {
 
 .footer-text {
   display: flex;
-  align-items: center;
+  padding-left: 5vw;
 }
 
-.footer-text a:last-child {
-  border-left: 1px solid #6e6e6e;
+.ver-line {
+  margin: auto 0 auto 0;
+  height: 20px;
+  border-right: 1px solid #6e6e6e;
 }
