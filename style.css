@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-image: url("img/apple.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+}
+
+nav {
+  position: relative;
+  top: 100px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.nav-link {
+  background:
+    linear-gradient(
+    180deg,
+    rgba(194, 183, 183, 1) 0%,
+    rgba(3, 3, 4, 1) 100%
+  );
+  padding: 15px;
+}
+
