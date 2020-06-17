@@ -18,7 +18,8 @@ body {
   line-height: 3.5em;
 }
 
-h1 ,h2 {
+h1,
+h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   margin: 10px;
@@ -40,7 +41,8 @@ a {
   background: url("./img/apple.jpg") 50% 100% no-repeat;
   max-width: 1440px;
   margin: 0 auto;
-  height: 70vh;
+  min-height: 500px;
+  max-height: 70vh;
 }
 
 #logo {
@@ -99,6 +101,10 @@ nav {
   border-bottom-right-radius: 10px;
   width: 100%;
   padding: 0;
+}
+
+footer a {
+  color: #08c;
 }
 
 .nav-link a {
@@ -166,6 +172,62 @@ nav {
   font-size: 2em;
 }
 
-.main-text a:hover{
+.footer-text a {
+  padding: 0 10px;
+}
+
+.footer-links ul a {
+  border-right: 1px solid #6e6e6e;
+  padding-right: 5px;
+}
+
+.main-text a:hover,
+.footer-links a:hover {
   text-decoration: underline;
+}
+
+.bottom-images-container {
+  width: 100%;
+}
+
+.bottom-images-container img {
+  float: left;
+  width: 25%;
+}
+
+footer {
+  clear: both;
+  width: 75%;
+  margin: 32vh auto 10px auto;
+  font-size: 0.9em;
+  color: #6e6e6e;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.footer-links ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#us-flag {
+  border: none;
+}
+
+#us-flag img {
+  display: inline;
+  vertical-align: middle;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+}
+
+.footer-text a:last-child {
+  border-left: 1px solid #6e6e6e;
 }
