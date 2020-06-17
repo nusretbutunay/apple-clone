@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 *,
 *::before,
 *::after {
@@ -13,6 +15,13 @@
 
 body {
   font: 12px/18px "Lucida Grande", Helvetica, Arial, sans-serif;
+  line-height: 3.5em;
+}
+
+h1 ,h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin: 10px;
 }
 
 .relative {
@@ -132,4 +141,31 @@ nav {
   top: 1.3vh;
   color: white;
   font-size: 0.9em;
+}
+
+.main-text {
+  text-transform: capitalize;
+  display: flex;
+  margin-top: 15vh;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.main-text h1 {
+  font-size: 5em;
+}
+
+.main-text h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.main-text a {
+  color: white;
+  font-size: 2em;
+}
+
+.main-text a:hover{
+  text-decoration: underline;
 }
